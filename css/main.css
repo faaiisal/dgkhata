@@ -1,0 +1,92 @@
+/**
+* article - It's a medium.com like to article
+* @author Faisal
+* @version v1.0.0
+* @link @Link url
+* @license MIT
+*/
+html, body, div, span,
+h1, h2, h3, h4, h5, h6 p, a,
+blockquote, pre, abbr, code,
+em, img, strong, sub, ul, li,
+table, form, label, tbody, thead, tr, th, td,
+article, aside, footer, header, menu, nav, summary, time,
+mark {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  word-break: break-word;
+  font-family: 'Rubik', sans-serif;
+  color: #000000; }
+
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  border-style: none;
+  list-style: none;
+  text-decoration: none;
+  color: #000000; }
+
+a:focus {
+  text-decoration: none; }
+
+ol,
+ul {
+  list-style: none;
+  display: inline;
+  margin: 0;
+  padding: 0; }
+
+.Root {
+  position: relative; }
+  .Root__kernel {
+    position: relative;
+    display: block;
+    overflow: hidden; }
+  .Root .App {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 14px;
+    justify-content: center; }
+
+.container {
+  max-width: 740px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 20px 50px;
+  background-color: #ffffff;
+  height: 100vh;
+  overflow: hidden;
+  border: 1px solid green; }
+
+.content {
+  border: 1px solid red;
+  position: relative;
+  padding: 95px 40px 0;
+  text-align: center; }
+  .content__title {
+    font-size: 48px;
+    line-height: 72px;
+    padding-bottom: 12px;
+    color: #000000;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700; }
+  .content__text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 400; }
