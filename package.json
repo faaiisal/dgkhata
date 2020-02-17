@@ -1,0 +1,27 @@
+{
+  "name": "article",
+  "version": "1.0.0",
+  "description": "It's a medium.com like to article",
+  "main": "css/main.css",
+  "repository": {
+    "type": "git",
+    "url": "@Link url"
+  },
+  "keywords": [
+    "Article",
+    "Typography",
+    "Blog"
+  ],
+  "author": "Faisal",
+  "license": "MIT",
+  "homepage": "@Link url",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-header": "^2.0.5",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
