@@ -74,8 +74,9 @@ ul,
       overflow: hidden
       .content
         position: relative 
-        padding: 95px 40px 0
+        padding: 50px 40px 100px
         text-align: center
+        transform: translateY(50%)
         &__title 
           font-size: 48px 
           line-height: 72px 
@@ -101,21 +102,21 @@ ul,
       width: 100%
       position: relative
       z-index: 300
-      &__customerName
-      &__customerInput
-        border: 1px solid #DEDEDE
-        color: #B0B0B0
-        height: 56px 
-        width: 100%   
-        position: absolute
-        left: 20px 
-        display: flex
-        align-items: center
-        justify-content: center
-        border-radius: 4px 
-        font-size: 18px 
-        line-height: 1.5
-        cursor: pointer 
+    &__customerName
+      font-size: 16px 
+      line-height: 1.5
+      color: #2C2C2C
+      margin-bottom: 10px 
+    &__customerInput
+      border: 1px solid #333333
+      color: #B0B0B0
+      height: 56px 
+      width: 100%   
+      border-radius: 4px 
+      font-size: 18px 
+      line-height: 1.5
+      cursor: pointer 
+      margin-top: 10px 
 .TopNavbar
   z-index: 200 
   position: fixed 
@@ -201,7 +202,20 @@ ul,
       margin-top: 3px
       &--left
         margin-right: 10px 
-        margin-top: 0
-  .hello 
-    border: 1px solid red 
+        margin-top: 0 
+  .buttonGroup 
+    height: 56px 
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 4px 
+    font-size: 18px 
+    line-height: 1.5
+    cursor: pointer
+    &__customer 
+      background-color: #BCBCBC 
+      border: 1px solid #BCBCBC
+      width: 155px
+      margin: 0 10px
+
     

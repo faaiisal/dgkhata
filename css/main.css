@@ -72,8 +72,9 @@ ul {
       overflow: hidden; }
       .Root .App__main .content {
         position: relative;
-        padding: 95px 40px 0;
-        text-align: center; }
+        padding: 50px 40px 100px;
+        text-align: center;
+        transform: translateY(50%); }
         .Root .App__main .content__title {
           font-size: 48px;
           line-height: 72px;
@@ -99,20 +100,21 @@ ul {
       width: 100%;
       position: relative;
       z-index: 300; }
-      .Root .App__customer__customerInput {
-        border: 1px solid #DEDEDE;
-        color: #B0B0B0;
-        height: 56px;
-        width: 100%;
-        position: absolute;
-        left: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 4px;
-        font-size: 18px;
-        line-height: 1.5;
-        cursor: pointer; }
+    .Root .App__customerName {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #2C2C2C;
+      margin-bottom: 10px; }
+    .Root .App__customerInput {
+      border: 1px solid #333333;
+      color: #B0B0B0;
+      height: 56px;
+      width: 100%;
+      border-radius: 4px;
+      font-size: 18px;
+      line-height: 1.5;
+      cursor: pointer;
+      margin-top: 10px; }
 
 .TopNavbar {
   z-index: 200;
@@ -200,5 +202,17 @@ ul {
       .BottomNavbar .button__icon--left {
         margin-right: 10px;
         margin-top: 0; }
-  .BottomNavbar .hello {
-    border: 1px solid red; }
+  .BottomNavbar .buttonGroup {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 1.5;
+    cursor: pointer; }
+    .BottomNavbar .buttonGroup__customer {
+      background-color: #BCBCBC;
+      border: 1px solid #BCBCBC;
+      width: 155px;
+      margin: 0 10px; }
