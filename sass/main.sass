@@ -133,6 +133,72 @@ ul,
         color: red 
       &--joma 
         color: #41B468
+    &__joma 
+      padding: 20px 10px 
+      margin-top: 58px 
+      width: 100%
+      position: relative
+      z-index: 300
+      background-color: #dddddd
+      height: auto 
+      .cart 
+        border: 1px solid #333333
+        padding: 10px 10px
+        background-color: #ffffff
+        display: flex 
+        flex-direction: row 
+        border-radius: 4px 
+        &__joma,
+        &__baki 
+          width: 177px 
+          height: 112px
+          display: flex 
+          flex-direction: column 
+          justify-content: center 
+          align-items: center 
+          padding: 20px 10px 
+        &__line 
+          border-left: 1px solid black 
+          margin: 0 15px 
+          height: 50px
+        &__details 
+          position: absolute 
+          bottom: 0 
+          left: 0
+          right: 0
+          transform: translateX(150px)
+          margin-bottom: 40px
+    &__Details
+      position: relative
+      width: 100% 
+      height: 56px 
+      .Info 
+        width: 100% 
+        &__input 
+          width: 100%
+          background-color: rgba(red, 0.3)
+          height: 55px
+          padding: 0 50px 0 10px
+        &__searchIcon
+          position: absolute 
+          top: 0 
+          right: 0
+    &__CustomerDetails
+      position: relative
+      width: 100% 
+      border-bottom: 1px solid red 
+      padding: 10px 0 
+      margin-left: 10px 
+      margin-right: 10px 
+      .CustomerDetails 
+        &__left 
+          float: left
+        &__right 
+          float: right 
+        &__left, 
+        &__right 
+          display: flex 
+          flex-direction: column 
 .TopNavbar
   z-index: 200 
   position: fixed 

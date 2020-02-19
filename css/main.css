@@ -129,6 +129,69 @@ ul {
       color: red; }
     .Root .App__customerName--joma, .Root .App__customerLogo--joma {
       color: #41B468; }
+    .Root .App__joma {
+      padding: 20px 10px;
+      margin-top: 58px;
+      width: 100%;
+      position: relative;
+      z-index: 300;
+      background-color: #dddddd;
+      height: auto; }
+      .Root .App__joma .cart {
+        border: 1px solid #333333;
+        padding: 10px 10px;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        border-radius: 4px; }
+        .Root .App__joma .cart__joma, .Root .App__joma .cart__baki {
+          width: 177px;
+          height: 112px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 20px 10px; }
+        .Root .App__joma .cart__line {
+          border-left: 1px solid black;
+          margin: 0 15px;
+          height: 50px; }
+        .Root .App__joma .cart__details {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          transform: translateX(150px);
+          margin-bottom: 40px; }
+    .Root .App__Details {
+      position: relative;
+      width: 100%;
+      height: 56px; }
+      .Root .App__Details .Info {
+        width: 100%; }
+        .Root .App__Details .Info__input {
+          width: 100%;
+          background-color: rgba(255, 0, 0, 0.3);
+          height: 55px;
+          padding: 0 50px 0 10px; }
+        .Root .App__Details .Info__searchIcon {
+          position: absolute;
+          top: 0;
+          right: 0; }
+    .Root .App__CustomerDetails {
+      position: relative;
+      width: 100%;
+      border-bottom: 1px solid red;
+      padding: 10px 0;
+      margin-left: 10px;
+      margin-right: 10px; }
+      .Root .App__CustomerDetails .CustomerDetails__left {
+        float: left; }
+      .Root .App__CustomerDetails .CustomerDetails__right {
+        float: right; }
+      .Root .App__CustomerDetails .CustomerDetails__left, .Root .App__CustomerDetails .CustomerDetails__right {
+        display: flex;
+        flex-direction: column; }
 
 .TopNavbar {
   z-index: 200;
