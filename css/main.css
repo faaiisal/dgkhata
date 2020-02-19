@@ -105,7 +105,7 @@ ul {
       line-height: 1.5;
       color: #2C2C2C;
       margin-bottom: 10px; }
-    .Root .App__customerInput {
+    .Root .App__customerSearch {
       border: 1px solid #333333;
       color: #B0B0B0;
       height: 56px;
@@ -114,7 +114,21 @@ ul {
       font-size: 18px;
       line-height: 1.5;
       cursor: pointer;
-      margin-top: 10px; }
+      margin-top: 10px;
+      padding-left: 40px;
+      padding-right: 20px; }
+      .Root .App__customerSearch:focus {
+        outline: none; }
+    .Root .App__customerLogo {
+      font-size: 24px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 75px 15px 0 40px; }
+    .Root .App__customerName--baki, .Root .App__customerLogo--baki {
+      color: red; }
+    .Root .App__customerName--joma, .Root .App__customerLogo--joma {
+      color: #41B468; }
 
 .TopNavbar {
   z-index: 200;
@@ -131,6 +145,8 @@ ul {
   padding: 0 20px; }
   .TopNavbar__addCustomer {
     background-color: #F2F2F2; }
+    .TopNavbar__addCustomer--baki {
+      background-color: #ffffff; }
   .TopNavbar__icon {
     width: 20px;
     height: 24px; }
