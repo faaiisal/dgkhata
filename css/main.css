@@ -171,7 +171,6 @@ ul {
         width: 100%; }
         .Root .App__Details .Info__input {
           width: 100%;
-          background-color: rgba(255, 0, 0, 0.3);
           height: 55px;
           padding: 0 50px 0 10px; }
         .Root .App__Details .Info__searchIcon {
@@ -192,6 +191,15 @@ ul {
       .Root .App__CustomerDetails .CustomerDetails__left, .Root .App__CustomerDetails .CustomerDetails__right {
         display: flex;
         flex-direction: column; }
+      .Root .App__CustomerDetails .CustomerDetails__text {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #000000; }
+        .Root .App__CustomerDetails .CustomerDetails__text--green {
+          color: green; }
+      .Root .App__CustomerDetails .CustomerDetails__copy {
+        font-size: 14px;
+        line-height: 1.5; }
 
 .TopNavbar {
   z-index: 200;
