@@ -15,19 +15,23 @@
         <div class="App">
           <div class="App__header">
             <div class="TopNavbar TopNavbar__addCustomer TopNavbar__addCustomer--baki">
-              <a href="" class="TopNavbar__link">
+              <!-- <a href="" class="TopNavbar__link">
                 <img class="TopNavbar__icon TopNavbar__icon--addCustomer" src="assets/img/left-arrows.svg" alt="icon">
-              </a>
-              <!-- <span class="TopNavbar__text TopNavbar__text--addCustomer">নতুন কাস্টমার যোগ করুন</span> -->
+              </a> -->
+              <button @click="back()" class="Button Button__topNavbar">
+                <img class="TopNavbar__icon" src="assets/img/link-go.svg" alt="icon">
+              </button>
+              <a href="" class="TopNavbar__text">dgখাতা</a>
+              <!-- <a href="" class="TopNavbar__text TopNavbar__text--addCustomer">নতুন কাস্টমার যোগ করুন</a> -->
             </div>
           </div>
           <div class="App__customer">
-            <label class="App__customerName App__customerName--joma">জাফরী ভাই জমা দিয়েছেন </label>
-            <input class="App__customerSearch" type="text" name="" id="">
+            <span class="App__customerName App__customerName--joma">জাফরী ভাই জমা দিয়েছেন </span>
+            <input class="App__customerInput" type="text" name="" id="">
             <span class="App__customerLogo App__customerLogo--joma">৳</span>
           </div>
           <div class="BottomNavbar">
-            <a href="customer__details.html" class="BottomNavbar__active">
+            <a href="customer__details.html" class="BottomNavbar__button BottomNavbar__button--active">
               সেভ করুন 
             </a>
           </div>
