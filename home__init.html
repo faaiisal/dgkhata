@@ -14,24 +14,34 @@
       <div class="Root__kernel">
         <div class="App">
           <div class="App__header">
-            <div class="TopNavbar">
-              <a href="" class="TopNavbar__link">
-                <img class="TopNavbar__icon" src="assets/img/arrow-left.svg" alt="icon">
-              </a>
-              <span class="TopNavbar__text">dgখাতা</span>
+            <div class="TopNavbar TopNavbar__addCustomer TopNavbar__addCustomer--baki">
+              <!-- <a href="" class="TopNavbar__link">
+                <img class="TopNavbar__icon TopNavbar__icon--addCustomer" src="assets/img/left-arrows.svg" alt="icon">
+              </a> -->
+              <button @click="back()" class="Button Button__topNavbar">
+                <img class="TopNavbar__icon" src="assets/img/link-go.svg" alt="icon">
+              </button>
+              <a href="" class="TopNavbar__text">dgখাতা</a>
+              <!-- <a href="" class="TopNavbar__text TopNavbar__text--addCustomer">নতুন কাস্টমার যোগ করুন</a> -->
             </div>
           </div>
-          <div class="App__main">
-            <div class="content">
+          <!-- <div class="App__main">
+            <div class="content content--center">
               <p class="content__text content__text--customer">নিচের বাটনে ক্লিক করুন নতুন কাস্টমার যোগ করতে</p>
               <img class="content__icon" src="assets/img/down-arrow.svg" alt="icon">
+            </div>
+          </div> -->
+          <div v-else class="App__container">
+            <div class="Content">
+              <p class="Content__text">নিচের বাটনে ক্লিক করুন নতুন কাস্টমার যোগ করতে</p>
+              <img class="Content__icon" src="assets/img/down-arrow.svg" alt="icon">
             </div>
           </div>
           <div class="BottomNavbar">
             <a href="home__init.html">
-              <button class="button button__customer">
-                <img class="button__icon button__icon--left" src="assets/img/plus-symbol.png" alt="icon">
-                <span class="button__text">নতুন কাস্টমার</span>
+              <button class="Button Button__customer">
+                <img class="Button__icon Button__icon--left" src="assets/img/plus.svg" alt="icon">
+                <span class="Button__text Button__text--add">নতুন কাস্টমার</span>
               </button>
             </a>
           </div>

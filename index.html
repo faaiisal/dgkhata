@@ -14,52 +14,70 @@
       <div class="Root__kernel">
         <div class="App">
           <div class="App__header">
-            <div class="TopNavbar">
-              <a href="" class="TopNavbar__link">
-                <img class="TopNavbar__icon" src="assets/img/arrow-left.svg" alt="icon">
-              </a>
-              <span class="TopNavbar__text">dgখাতা</span>
+            <div class="TopNavbar TopNavbar__addCustomer TopNavbar__addCustomer--baki">
+              <!-- <a href="" class="TopNavbar__link">
+                <img class="TopNavbar__icon TopNavbar__icon--addCustomer" src="assets/img/left-arrows.svg" alt="icon">
+              </a> -->
+              <button @click="back()" class="Button Button__topNavbar">
+                <img class="TopNavbar__icon" src="assets/img/link-go.svg" alt="icon">
+              </button>
+              <a href="" class="TopNavbar__text">dgখাতা</a>
+              <!-- <a href="" class="TopNavbar__text TopNavbar__text--addCustomer">নতুন কাস্টমার যোগ করুন</a> -->
             </div>
           </div>
-          <div class="App__joma">
-            <div class="cart">
-              <div class="cart__joma">
-                <label for="" class="cart__total">৳ ৬,৫০০</label>
-                <p class="cart__text">মোট জমা</p>
+          <div>
+            <div class="App__Cart">
+              <div class="Cart">
+                <div class="Cart__wrapper">
+                  <div class="Cart__deposite">
+                    <label for="" class="Cart__total">৳ ৬,৫০০</label>
+                    <p class="Cart__text">মোট জমা</p>
+                  </div>
+                  <div class="Cart__line"></div>
+                  <div class="Cart__due">
+                    <label for="" class="Cart__total Cart__total--due">৳ ৫০০</label>
+                    <p class="Cart__text">মোট বাকি</p>
+                  </div>
+                </div>
+                <div class="Cart__details">বিস্তারিত দেখুন</div>
               </div>
-              <div class="cart__line"></div>
-              <div class="cart__baki">
-                <label for="" class="cart__total">৳ 0</label>
-                <p class="cart__text">মোট বাকি</p>
-              </div>
-              <div class="cart__details">বিস্তারিত দেখুন</div>
             </div>
-          </div>
-          <div class="App__Details">
-            <div class="Info">
-              <input type="text" class="Info__input">
-              <img src="assets/img/arrow-left.svg" alt="" class="Info__searchIcon">
-            </div>
-          </div>
-          <div class="App__CustomerDetails">
-            <div class="CustomerDetails">
-              <div class="CustomerDetails__left">
-                <lable class="CustomerDetails__text">জাফরী ভাই</lable>
-                <label for="" class="CustomerDetails__copy">০১/০১/২০২০ </label>
+            <div class="App__Summary">
+              <div class="Search">
+                <input v-model="searchedText" type="text" class="Search__input" placeholder="কাস্টমার খুঁজুন">
+                <img src="assets/img/icon__search.svg" alt="Search Icon" class="Search__searchIcon">
               </div>
-              <div class="CustomerDetails__right">
-                <lable class="CustomerDetails__text CustomerDetails__text--green">৳ ৬৫০০</lable>
-                <label for="" class="CustomerDetails__copy">জমা </label>
+              <div class="Summary">
+                <ul  class="Summary__list">
+                  <li class="Summary__item">
+                    <a href="" class="Summary__link">  
+                      <div class="Summary__link--left">
+                        <span class="Summary__text">জাফরী ভাই </span>
+                        <span class="Summary__copy">০১/০১/২০২০ </span>
+                      </div>
+                      <div  class="Summary__link--right">
+                        <span class="Summary__text Summary__text--red">৳ ৫,০০০</span>
+                        <span class="Summary__copy">বাকী </span>
+                        <!-- <div >
+                          <span class="Summary__text Summary__text--green">৳ ৬,৫০০</span>
+                          <span class="Summary__copy">জমা </span>
+                        </div> -->
+                      </div>
+                      <!-- <div  class="Summary__link--right">
+                        <span class="Summary__text Summary__text--green">লেনদেন নাই</span>
+                        <span class="Summary__copy">লেনদেন নেই</span>
+                      </div> -->
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
           <div class="BottomNavbar">
-            <a href="home__init.html">
-              <button class="button button__customer">
-                <img class="button__icon button__icon--left" src="assets/img/plus-symbol.png" alt="icon">
-                <span class="button__text">নতুন কাস্টমার</span>
-              </button>
-            </a>
+            <nuxt-link to="/customers/create" class="Button Button__customer">
+              <img class="Button__icon Button__icon--left" src="assets/img/plus.svg" alt="icon">
+              <span class="Button__text Button__text--add">নতুন কাস্টমার</span>
+            </nuxt-link>
           </div>
         </div>
       </div>

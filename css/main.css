@@ -56,11 +56,7 @@ ul {
     display: block;
     overflow: hidden; }
   .Root .App {
-    position: relative;
-    display: flex;
-    flex-flow: row wrap;
-    font-size: 14px;
-    justify-content: center; }
+    position: relative; }
     .Root .App__main {
       padding: 30px 20px;
       display: flex;
@@ -73,8 +69,12 @@ ul {
       .Root .App__main .content {
         position: relative;
         padding: 50px 40px 100px;
-        text-align: center;
-        transform: translateY(50%); }
+        text-align: center; }
+        .Root .App__main .content--center {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center; }
         .Root .App__main .content__title {
           font-size: 48px;
           line-height: 72px;
@@ -123,64 +123,6 @@ ul {
       padding-right: 20px; }
       .Root .App__customerInput:focus {
         outline: none; }
-    .Root .App__customerLogo {
-      font-size: 24px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      padding: 108px 15px 0 40px; }
-    .Root .App__customerName--baki, .Root .App__customerLogo--baki {
-      color: red; }
-    .Root .App__customerName--joma, .Root .App__customerLogo--joma {
-      color: #41B468; }
-    .Root .App__joma {
-      padding: 20px 10px;
-      margin-top: 58px;
-      width: 100%;
-      position: relative;
-      z-index: 300;
-      background-color: #dddddd;
-      height: auto; }
-      .Root .App__joma .cart {
-        border: 1px solid #333333;
-        padding: 10px 10px;
-        background-color: #ffffff;
-        display: flex;
-        flex-direction: row;
-        border-radius: 4px; }
-        .Root .App__joma .cart__joma, .Root .App__joma .cart__baki {
-          width: 177px;
-          height: 112px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          padding: 20px 10px; }
-        .Root .App__joma .cart__line {
-          border-left: 1px solid black;
-          margin: 0 15px;
-          height: 50px; }
-        .Root .App__joma .cart__details {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          transform: translateX(150px);
-          margin-bottom: 40px; }
-    .Root .App__Details {
-      position: relative;
-      width: 100%;
-      height: 56px; }
-      .Root .App__Details .Info {
-        width: 100%; }
-        .Root .App__Details .Info__input {
-          width: 100%;
-          height: 55px;
-          padding: 0 50px 0 10px; }
-        .Root .App__Details .Info__searchIcon {
-          position: absolute;
-          top: 0;
-          right: 0; }
     .Root .App__CustomerDetails {
       position: relative;
       width: 100%;
@@ -204,6 +146,210 @@ ul {
       .Root .App__CustomerDetails .CustomerDetails__copy {
         font-size: 14px;
         line-height: 1.5; }
+    .Root .App__container {
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+      overflow: hidden; }
+      .Root .App__container .Content {
+        position: relative;
+        text-align: center; }
+        .Root .App__container .Content__text {
+          font-size: 18px;
+          line-height: 1.5;
+          color: #a8a8a8;
+          font-weight: 400; }
+        .Root .App__container .Content__icon {
+          width: 30px;
+          height: 64px;
+          color: #A8A8A8;
+          fill: #A8A8A8; }
+    .Root .App__Cart {
+      position: relative;
+      margin-top: 56px;
+      padding: 10px 0;
+      background-color: rgba(0, 0, 0, 0.2);
+      overflow: hidden; }
+      .Root .App__Cart .Cart {
+        position: relative;
+        background-color: #ffffff;
+        margin: 0 20px;
+        border: 1px solid #828282;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        padding: 10px 10px 0;
+        border-radius: 4px; }
+        .Root .App__Cart .Cart__wrapper {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 10px; }
+        .Root .App__Cart .Cart__deposite {
+          flex: 1;
+          align-items: center; }
+        .Root .App__Cart .Cart__line {
+          flex: 0;
+          display: inline-flex;
+          align-items: center;
+          text-align: center;
+          border-left: 1px solid #C3C3C3;
+          margin: 0 15px;
+          height: 40px; }
+        .Root .App__Cart .Cart__due {
+          flex: 1;
+          text-align: right; }
+        .Root .App__Cart .Cart__details {
+          border-top: 1px solid #C3C3C3;
+          color: #888;
+          font-size: 13px;
+          height: 31px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 -10px; }
+        .Root .App__Cart .Cart__total {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 14px;
+          color: #4ABC73; }
+          .Root .App__Cart .Cart__total--due {
+            color: #F0426A; }
+        .Root .App__Cart .Cart__text {
+          font-size: 14px;
+          color: #888;
+          text-align: center; }
+    .Root .App__Summary {
+      position: relative;
+      display: flex;
+      flex-direction: column; }
+      .Root .App__Summary .Search {
+        disply: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid #C3C3C3; }
+        .Root .App__Summary .Search__input {
+          font-size: 14px;
+          line-height: 18px;
+          width: 100%;
+          height: 32px;
+          padding: 0 50px 0 10px; }
+          .Root .App__Summary .Search__input:focus, .Root .App__Summary .Search__input:active {
+            outline: none; }
+        .Root .App__Summary .Search__searchIcon {
+          position: absolute;
+          right: 0;
+          margin-right: 20px;
+          width: 16px;
+          height: 16px;
+          margin-top: 10px; }
+      .Root .App__Summary .Summary {
+        position: relative;
+        overflow-y: scroll;
+        height: 600px; }
+        .Root .App__Summary .Summary__list {
+          position: relative;
+          display: block;
+          overflow-y: scroll;
+          height: 100vh;
+          width: 100%;
+          padding: 10px 10px 10px;
+          list-style: none;
+          margin-bottom: 30px; }
+        .Root .App__Summary .Summary__item {
+          padding: 5px 0 5px;
+          border-bottom: 1px solid #E1E1E1;
+          position: relative;
+          display: flex;
+          flex-direction: column; }
+        .Root .App__Summary .Summary__link {
+          color: #888;
+          text-decoration: none; }
+          .Root .App__Summary .Summary__link--left {
+            float: left; }
+          .Root .App__Summary .Summary__link--right {
+            float: right;
+            text-align: right; }
+          .Root .App__Summary .Summary__link--left, .Root .App__Summary .Summary__link--right {
+            position: relative;
+            display: flex;
+            flex-direction: column; }
+        .Root .App__Summary .Summary__text {
+          font-size: 16px;
+          line-height: 1.5;
+          color: #000000; }
+          .Root .App__Summary .Summary__text--green {
+            color: green; }
+          .Root .App__Summary .Summary__text--red {
+            color: red; }
+        .Root .App__Summary .Summary__copy {
+          font-size: 14px;
+          line-height: 1.5; }
+    .Root .App__Details .TopDetails {
+      position: relative;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      padding: 10px;
+      border-bottom: 1px solid #707070; }
+      .Root .App__Details .TopDetails__date, .Root .App__Details .TopDetails__baki, .Root .App__Details .TopDetails__joma {
+        flex: 1 35%;
+        color: rgba(0, 0, 0, 0.34);
+        font-size: 14px;
+        line-height: 20px; }
+      .Root .App__Details .TopDetails__date {
+        text-align: left; }
+    .Root .App__Details .Transaction {
+      position: relative;
+      margin: 0; }
+      .Root .App__Details .Transaction__list {
+        list-style: none;
+        padding: 0; }
+      .Root .App__Details .Transaction__link {
+        position: relative;
+        text-decoration: none;
+        color: #888; }
+      .Root .App__Details .TransactionDetails {
+        position: relative;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border-bottom: 1px solid #ddd;
+        margin: 0 10px; }
+        .Root .App__Details .TransactionDetails__date, .Root .App__Details .TransactionDetails__baki, .Root .App__Details .TransactionDetails__joma {
+          flex: 1 33.33%;
+          font-size: 16px;
+          line-height: 20px;
+          padding: 10px; }
+        .Root .App__Details .TransactionDetails__date {
+          color: rgba(0, 0, 0, 0.44);
+          font-size: 12px;
+          line-height: 20px;
+          text-align: left;
+          margin-left: -10px;
+          margin-right: 20px; }
+        .Root .App__Details .TransactionDetails__baki, .Root .App__Details .TransactionDetails__joma {
+          font-size: 16px;
+          line-height: 20px;
+          color: #EE395F; }
+        .Root .App__Details .TransactionDetails__joma {
+          color: #41B468;
+          background-color: transparent; }
+        .Root .App__Details .TransactionDetails__baki {
+          background-color: #EDEDED;
+          position: fiexd; }
+        .Root .App__Details .TransactionDetails__link {
+          cursor: pointer; }
 
 .TopNavbar {
   z-index: 200;
@@ -263,7 +409,12 @@ ul {
     border-radius: 4px;
     font-size: 18px;
     line-height: 1.5;
-    cursor: pointer; }
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto; }
+    .BottomNavbar__button__add {
+      color: rgba(0, 0, 0, 0.84);
+      background: linear-gradient(#dedede, #C3C3C3); }
   .BottomNavbar .buttonGroup {
     height: 56px;
     display: flex;
@@ -288,7 +439,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 4px;
+    border-radius: 6px;
     font-size: 18px;
     line-height: 1.5;
     cursor: pointer;
@@ -309,3 +460,17 @@ ul {
       left: 0;
       border: none;
       background-color: transparent; }
+    .BottomNavbar .Button__text {
+      font-size: 18px;
+      line-height: 1.25;
+      margin-right: 15px; }
+      .BottomNavbar .Button__text--add {
+        margin-left: 10px; }
+    .BottomNavbar .Button__customer {
+      color: rgba(0, 0, 0, 0.84);
+      background: linear-gradient(#dedede, #C3C3C3);
+      max-width: 190px;
+      width: 100%;
+      border-radius: 50px;
+      right: 20px;
+      z-index: 600; }

@@ -21,10 +21,56 @@
               <span class="TopNavbar__text">জাফরী ভাই</span>
             </div>
           </div>
-          <div class="App__main">
-            <div class="content">
-              <p class="content__text content__text--customer">জাফরী ভাই এর প্রথম লেনদেন যোগ করুন </p>
-              <img class="content__icon" src="assets/img/down-arrow.svg" alt="icon">
+          <div class="App__Cart">
+            <div class="Cart">
+              <div class="Cart__wrapper">
+                <div class="Cart__deposite">
+                  <p class="Cart__text">এর কাছে আমি পাব</p>
+                </div>
+                <div class="Cart__due">
+                  <p for="" class="Cart__text Cart__text--deposite Cart__text--due">৳ 9898</p>
+                </div>
+              </div>
+              <!-- <div v-else-if="this.totalDeposit > this.totalDue" class="Cart__wrapper">
+                <div class="Cart__deposite">
+                  <p class="Cart__text">{{ customerName }} পাবে</p>
+                </div>
+                <div class="Cart__due">
+                  <p for="" class="Cart__text Cart__text--deposite Cart__text--deposit">৳ {{ (totalDeposit - totalDue).toLocaleString('bn') }}</p>
+                </div>
+              </div>
+              <div v-else class="Cart__wrapper">
+                <div class="Cart__deposite">
+                  <p class="Cart__text">{{ customerName }} এর সাথে কোন দেনা পাওনা নেই</p>
+                </div>
+                <div class="Cart__due">
+                  <p for="" class="Cart__text Cart__text--deposite Cart__text--due">৳ {{ (totalDue - totalDeposit).toLocaleString('bn') }}</p>
+                </div>
+              </div> -->
+              <div class="Cart__details">যোগাযোগ করুন</div>
+            </div>
+          </div>
+          <div class="App__Details">
+            <div class="TopDetails">
+              <div class="TopDetails__date">তারিখ</div>
+              <div class="TopDetails__baki">বাকী</div>
+              <div class="TopDetails__joma">জমা</div>
+            </div>
+            <div class="Transaction">
+              <ul class="Transaction__list">
+                <li class="Transaction__item">
+                  <a href="" class="Transaction__link">
+                     <div class="TransactionDetails" >
+                        <div class="TransactionDetails__date">
+                          <span class="date">০১/০১/২০২০</span> <br>
+                          <span> ১২:০২ pm</span>
+                        </div>
+                        <div class="TransactionDetails__baki">৳ 0990</div>
+                        <div class="TransactionDetails__joma">৳ 9898</div>
+                      </div>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="BottomNavbar">
